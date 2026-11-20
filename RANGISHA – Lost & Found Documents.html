@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RANGISHA – Lost &amp; Found Documents</title>
+<style>
+:root{--bg:#fffdf6;--card:#fff;--tx:#1d2b24;--mut:#5c6b63;--bl:#00a1de;--yl:#fad201;--gr:#20603d;--bd:#e4e0cf;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10181a;--card:#182326;--tx:#eef3ef;--mut:#a3b3aa;--bd:#2a3a3d}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--tx);line-height:1.6}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--gr);color:#fff;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;padding:10px 20px}
+.logo{font-weight:800;font-size:1.3rem;letter-spacing:1px}.logo span{color:var(--yl)}
+nav{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+nav a{color:#fff;text-decoration:none;padding:6px 12px;border-radius:20px;font-size:.95rem}
+nav a.on,nav a:hover{background:var(--bl)}
+.lang{margin-left:auto;display:flex;gap:4px}
+.lang button{border:2px solid var(--yl);background:transparent;color:#fff;border-radius:16px;padding:4px 12px;cursor:pointer;font-weight:600}
+.lang button.on{background:var(--yl);color:#1d2b24}
+main{max-width:980px;margin:0 auto;padding:24px 18px 60px}
+section{display:none}section.on{display:block}
+h1{font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.15;margin:.2em 0}h2{margin-top:1.6em}
+.hero{display:grid;gap:24px;align-items:center;grid-template-columns:1.1fr 1fr}
+@media(max-width:720px){.hero{grid-template-columns:1fr}}
+.btn{display:inline-block;background:var(--bl);color:#fff;border:0;border-radius:24px;padding:11px 22px;font-size:1rem;font-weight:600;cursor:pointer;text-decoration:none}
+.btn.y{background:var(--yl);color:#1d2b24}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:18px}
+.ic{font-size:2.2rem}.mut{color:var(--mut)}
+.tag{display:inline-block;font-size:.78rem;padding:2px 10px;border-radius:12px;background:var(--yl);color:#1d2b24;font-weight:600}
+.photo{height:130px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:3.2rem;margin-bottom:10px;background:linear-gradient(135deg,var(--bl),var(--gr))}
+input,select,textarea{width:100%;padding:10px;border:1px solid var(--bd);border-radius:10px;font:inherit;background:var(--card);color:var(--tx);margin:4px 0 12px}
+.opt{display:flex;gap:10px;align-items:flex-start;cursor:pointer}.opt input{width:auto;margin-top:6px}
+.ok{display:none;background:#e5f6ea;color:#14472b;border-radius:12px;padding:14px;margin-top:14px}
+.note{font-size:.85rem;color:var(--mut)}
+footer{text-align:center;padding:20px;color:var(--mut);font-size:.85rem}
+.band{height:8px;background:linear-gradient(90deg,var(--bl) 33%,var(--yl) 33% 66%,var(--gr) 66%)}
+</style></head><body>
+<div class="band"></div>
+<header>
+<div class="logo">RAN<span>GISHA</span></div>
+<nav id="nav"><a href="#home" data-i="n1"></a><a href="#found" data-i="n2"></a><a href="#report" data-i="n3"></a><a href="#vision" data-i="n4"></a></nav>
+<div class="lang"><button id="b-en" onclick="setL('en')">English</button><button id="b-rw" onclick="setL('rw')">Kinyarwanda</button></div>
+</header>
+<main>
+
+<section id="home"><div class="hero"><div>
+<span class="tag" data-i="h0"></span><h1 data-i="h1"></h1><p data-i="h2"></p>
+<a class="btn" href="#found" data-i="h3"></a> <a class="btn y" href="#report" data-i="h4"></a></div>
+<svg viewBox="0 0 400 300" role="img" aria-label="Rwanda hills with a document and magnifying glass">
+<rect width="400" height="300" rx="22" fill="#bfe8f7"/><circle cx="320" cy="60" r="28" fill="#fad201"/>
+<path d="M0 220 Q70 120 150 200 T300 170 T400 210 V300 H0Z" fill="#2f8a57"/><path d="M0 255 Q100 190 200 245 T400 240 V300 H0Z" fill="#20603d"/>
+<rect x="110" y="70" width="130" height="160" rx="10" fill="#fff" stroke="#00a1de" stroke-width="5" transform="rotate(-6 175 150)"/>
+<g transform="rotate(-6 175 150)" fill="#00a1de"><circle cx="150" cy="115" r="16"/><rect x="175" y="105" width="45" height="7" rx="3"/><rect x="175" y="122" width="35" height="7" rx="3"/><rect x="125" y="150" width="95" height="7" rx="3" fill="#cfd8dc"/><rect x="125" y="168" width="80" height="7" rx="3" fill="#cfd8dc"/><rect x="125" y="186" width="60" height="7" rx="3" fill="#cfd8dc"/></g>
+<circle cx="250" cy="190" r="34" fill="none" stroke="#fad201" stroke-width="10"/><line x1="274" y1="214" x2="308" y2="250" stroke="#fad201" stroke-width="12" stroke-linecap="round"/>
+</svg></div>
+<h2 data-i="h5"></h2><div class="card" data-i="h6"></div>
+<h2 data-i="h7"></h2><div class="grid">
+<div class="card"><div class="ic">🔍</div><b data-i="s1t"></b><p class="mut" data-i="s1"></p></div>
+<div class="card"><div class="ic">👮</div><b data-i="s2t"></b><p class="mut" data-i="s2"></p></div>
+<div class="card"><div class="ic">📱</div><b data-i="s3t"></b><p class="mut" data-i="s3"></p></div></div>
+</section>
+
+<section id="found"><h1 data-i="f1"></h1><p class="mut" data-i="f2"></p>
+<input id="q" oninput="draw()" data-ph="f3">
+<div class="grid" id="list"></div>
+<p class="note" data-i="f4"></p></section>
+
+<section id="report"><h1 data-i="r1"></h1><p class="mut" data-i="r2"></p>
+<form class="card" onsubmit="return sub(event)">
+<label data-i="r3"></label><select id="dt"><option data-i="d1"></option><option data-i="d2"></option><option data-i="d3"></option><option data-i="d4"></option><option data-i="d5"></option></select>
+<label data-i="r4"></label><input id="pl" required>
+<label data-i="r5"></label>
+<label class="opt"><input type="radio" name="drop" value="leader" checked><span><b data-i="r6"></b><br><span class="mut" data-i="r6b"></span></span></label>
+<label class="opt"><input type="radio" name="drop" value="police"><span><b data-i="r7"></b><br><span class="mut" data-i="r7b"></span></span></label>
+<label data-i="r8"></label><input id="ph" type="tel" placeholder="07XXXXXXXX">
+<p class="note" data-i="r9"></p>
+<button class="btn" type="submit" data-i="r10"></button>
+<div class="ok" id="ok" data-i="r11"></div></form></section>
+
+<section id="vision"><h1 data-i="v1"></h1><p data-i="v2"></p>
+<div class="grid">
+<div class="card"><div class="photo">🇷🇼</div><b data-i="v3t"></b><p class="mut" data-i="v3"></p></div>
+<div class="card"><div class="photo">🤝</div><b data-i="v4t"></b><p class="mut" data-i="v4"></p></div>
+<div class="card"><div class="photo">🔐</div><b data-i="v5t"></b><p class="mut" data-i="v5"></p></div></div></section>
+</main>
+<footer>© RANGISHA · Rwanda 🇷🇼</footer>
+
+<script>
+const T={
+en:{n1:"Home",n2:"Found Documents",n3:"I Found a Document",n4:"Our Vision",
+h0:"Lost &amp; Found · Rwanda",h1:"Got your lost documents back, easily.",h2:"RANGISHA helps Rwandans recover lost ID cards, driving permits, land papers and more, without radio announcements or paying for new copies.",h3:"See found documents",h4:"Report a found document",
+h5:"How we came up with this idea",h6:"Many Rwandans lose an important document, then spend days making announcements or applying and paying for a new one, while the original sits safely with someone who has no easy way to return it. We asked: what if finders and owners could meet in one trusted place? RANGISHA is that place.",
+h7:"How it works",s1t:"1. Search",s1:"Check the Found Documents page for your name or document type.",s2t:"2. We direct you",s2:"Documents are kept mainly by the Rwanda National Police. Land and property papers go to your nearest local leader.",s3t:"3. Get a message",s3:"When your document is matched, we send a short SMS telling you which station or office to visit.",
+f1:"Found Documents",f2:"Documents reported found and where to collect them. Names are partly hidden to protect your privacy; bring your ID to collect.",f3:"Search by name, type or district…",f4:"Sample entries for demonstration only.",
+r1:"I Found a Document",r2:"Thank you for being honest. Tell us what you found and choose where you will hand it in.",
+r3:"Type of document",d1:"National ID",d2:"Driving permit",d3:"Passport",d4:"Land / property document",d5:"Other",
+r4:"Where did you find it? (sector / district)",r5:"Where will you take it?",
+r6:"Nearest local leader's office",r6b:"Best for land and property documents.",r7:"Police station",r7b:"Best for IDs, permits and passports.",
+r8:"Your phone number (optional)",r9:"Never keep or use a document that is not yours. Submit it within 24 hours.",r10:"Submit report",
+r11:"✅ Thank you! Your report is received. Please deliver the document to your chosen place so the owner can be told by SMS.",
+v1:"Our Vision",v2:"We dream of a Rwanda where no citizen suffers because of a lost document, and where honesty is rewarded.",
+v3t:"Every district covered",v3:"Police stations and local leaders in all 30 districts linked in one system.",
+v4t:"A community of honesty",v4:"Finders, leaders and police working together so documents return home fast.",
+v5t:"Safe and trusted",v5:"Strong protection of personal data and fraud prevention, plus access in Kinyarwanda, English and French.",
+loc:"Collect at",pol:"Police Station",led:"Local leader – Sector Office",none:"No matches."},
+rw:{n1:"Ahabanza",n2:"Ibyangombwa Byabonetse",n3:"Nabonye Icyangombwa",n4:"Icyerekezo Cyacu",
+h0:"Ibyatakaye &amp; Ibyabonetse · u Rwanda",h1:"Garura ibyangombwa byawe byatakaye mu buryo bworoshye.",h2:"RANGISHA ifasha Abanyarwanda kubona indangamuntu, impushya zo gutwara, ibyangombwa by'ubutaka n'ibindi byatakaye, hatabayeho amatangazo cyangwa kwishyura ibishya.",h3:"Reba ibyabonetse",h4:"Tanga icyabonetse",
+h5:"Uko igitekerezo cyatangiye",h6:"Abanyarwanda benshi iyo batakaje icyangombwa gikomeye, bamara iminsi batangaza cyangwa basaba ikindi bakishyura, kandi umwimerere uri ahantu hizewe ku muntu utazi uko wawusubiza nyirawo. Twibajije tuti: ese abayibonye na ba nyirabyo bahurira ahantu hamwe hizewe? RANGISHA ni ho hantu.",
+h7:"Uko bikora",s1t:"1. Shakisha",s1:"Reba ku rupapuro rw'ibyabonetse izina ryawe cyangwa ubwoko bw'icyangombwa.",s2t:"2. Tukwereka aho ujya",s2:"Ibyangombwa byinshi bibikwa na Polisi y'u Rwanda. Ibyangombwa by'ubutaka n'imitungo bijya ku muyobozi w'ibanze ubegereye.",s3t:"3. Wohererezwa ubutumwa",s3:"Icyangombwa cyawe kibonetse, tukoherereza ubutumwa bugufi (SMS) bukubwira sitasiyo cyangwa ibiro ujyaho.",
+f1:"Ibyangombwa Byabonetse",f2:"Ibyangombwa byatanzwe ko byabonetse n'aho wabifatira. Amazina amwe arahishwa kugira ngo ubuzima bwite burindwe; zana indangamuntu yawe uje kubifata.",f3:"Shakisha izina, ubwoko cyangwa akarere…",f4:"Ibi ni ingero zo kwerekana gusa.",
+r1:"Nabonye Icyangombwa",r2:"Urakoze ubunyangamugayo. Tubwire icyo wabonye maze uhitemo aho uzakigeza.",
+r3:"Ubwoko bw'icyangombwa",d1:"Indangamuntu",d2:"Uruhushya rwo gutwara",d3:"Pasiporo",d4:"Icyangombwa cy'ubutaka / umutungo",d5:"Ikindi",
+r4:"Wakibonye he? (umurenge / akarere)",r5:"Uzakigeza he?",
+r6:"Ku biro by'umuyobozi w'ibanze ukwegereye",r6b:"Byiza ku byangombwa by'ubutaka n'imitungo.",r7:"Kuri sitasiyo ya Polisi",r7b:"Byiza ku ndangamuntu, impushya na pasiporo.",
+r8:"Nimero yawe ya telefone (si itegeko)",r9:"Ntukigumane cyangwa ngo ukoreshe icyangombwa kitari icyawe. Gishyikirize mu masaha 24.",r10:"Ohereza",
+r11:"✅ Murakoze! Raporo yanyu yakiriwe. Nimugeze icyangombwa aho mwahisemo kugira ngo nyiracyo abimenyeshwe kuri SMS.",
+v1:"Icyerekezo Cyacu",v2:"Turifuza u Rwanda aho nta muturage ugirwaho ingaruka no gutakaza icyangombwa, kandi ubunyangamugayo bugahabwa agaciro.",
+v3t:"Uturere twose",v3:"Sitasiyo za Polisi n'abayobozi b'ibanze mu turere 30 twose bahurijwe muri sisitemu imwe.",
+v4t:"Umuryango w'ubunyangamugayo",v4:"Abaturage, abayobozi n'abapolisi bafatanya kugira ngo ibyangombwa bigaruke vuba.",
+v5t:"Umutekano n'icyizere",v5:"Kurinda amakuru bwite no gukumira uburiganya, ndetse n'uburyo bwo gukoresha Ikinyarwanda, Icyongereza n'Igifaransa.",
+loc:"Fatira",pol:"Sitasiyo ya Polisi",led:"Umuyobozi w'ibanze – Ibiro by'Umurenge",none:"Nta cyabonetse."}};
+const D=[["National ID","d1","J*** M***","Kicukiro","p","Kicukiro"],["Driving permit","d2","A*** U***","Gasabo","p","Remera"],["Land / property document","d4","C*** N***","Musanze","l","Muhoza"],["Passport","d3","E*** K***","Huye","p","Huye"],["National ID","d1","D*** I***","Rubavu","p","Gisenyi"],["Land / property document","d4","F*** B***","Nyagatare","l","Nyagatare"]];
+const ICON={d1:"🪪",d2:"🚗",d3:"📘",d4:"📜"};
+let L=localStorage.getItem&&null||"en";
+try{L=localStorage.getItem("rg-lang")||"en"}catch(e){}
+function setL(l){L=l;try{localStorage.setItem("rg-lang",l)}catch(e){}
+document.documentElement.lang=l==="rw"?"rw":"en";
+document.querySelectorAll("[data-i]").forEach(e=>e.innerHTML=T[L][e.dataset.i]);
+document.querySelectorAll("[data-ph]").forEach(e=>e.placeholder=T[L][e.dataset.ph]);
+["en","rw"].forEach(x=>document.getElementById("b-"+x).classList.toggle("on",x===l));draw()}
+function draw(){const q=document.getElementById("q").value.toLowerCase(),t=T[L];
+const r=D.filter(d=>(t[d[1]]+d[2]+d[3]+d[0]).toLowerCase().includes(q));
+document.getElementById("list").innerHTML=r.map(d=>`<div class="card"><div class="photo">${ICON[d[1]]}</div><b>${t[d[1]]}</b><div class="mut">${d[2]} · ${d[3]}</div><p>📍 ${t.loc}: <b>${d[4]==="p"?t.pol:t.led}</b>, ${d[5]}</p></div>`).join("")||`<p>${t.none}</p>`}
+function sub(e){e.preventDefault();document.getElementById("ok").style.display="block";e.target.reset();return false}
+function route(){const h=(location.hash||"#home").slice(1),id=["home","found","report","vision"].includes(h)?h:"home";
+document.querySelectorAll("section").forEach(s=>s.classList.toggle("on",s.id===id));
+document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+id));scrollTo(0,0)}
+addEventListener("hashchange",route);route();setL(L);
+</script></body></html>
